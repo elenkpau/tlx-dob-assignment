@@ -35,7 +35,7 @@ public class JsonProcessor {
         ObjectMapper mapper = new ObjectMapper();
         try {
             // Read JSON from file
-            String jsonString = readFile("json_processor\\src\\main\\resources\\squad.json", Charset.defaultCharset());
+            String jsonString = readFile("jsonprocessor\\src\\main\\resources\\squad.json", Charset.defaultCharset());
 
             // Map to list of squad members
             List<SquadMember> squadMembers = mapper.readValue(jsonString, Squad.class).getMembers();
